@@ -133,7 +133,7 @@ const MessageList = () => {
               averageScore: averageScore
             }
           ]);
-          setscore([
+          setscoreList([
            scoreList,
             {
               score: score
@@ -147,7 +147,7 @@ const MessageList = () => {
       />
       <ul>
         {messageList.map(m => (
-          <li key={m.id}>{m.userName}{m.handicap}<m.averageScore><m.score></li>
+          <li>{m.userName}{m.handicap}{m.averageScore}{m.score}</li>
         ))}
       </ul>
     </div>
